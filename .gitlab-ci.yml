@@ -34,6 +34,11 @@ build:
 
 test:
   stage: test
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
   script:
     - |
       if [[ "$CI_COMMIT_BRANCH" == "$CI_DEFAULT_BRANCH" ]]; then
@@ -45,6 +50,27 @@ test:
       fi
     - docker compose up --pull -t "$CI_REGISTRY_IMAGE${tag}" .
     - docker run $CI_REGISTRY_IMAGE npm run test
+
+  deploy-staging:
+    stage: deploy
+    image: docker:latest
+    services:
+      - docker:dind
+    before_script:
+      - aws ecr get-login-password | docker login --username AWS --password-stdin $AWS_ECR_ENDPOINT
+    script:
+      - docker push $AWS_ECR_ENDPOINT/$APP_NAME:$CI_PIPELINE_IID
+  
+  deploy-production:
+    stage: deploy
+    image: docker:latest
+    services:
+      - docker:dind
+    before_script:
+      - aws ecr get-login-password | docker login --username AWS --password-stdin $AWS_ECR_ENDPOINT
+    script:
+      - docker push $AWS_ECR_ENDPOINT/$APP_NAME:$CI_PIPELINE_IID
+    when: manual
 
 sast:
   stage: test
