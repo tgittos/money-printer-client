@@ -3,6 +3,8 @@ services:
     build:
       dockerfile: ./Dockerfile
       context: .
+    env_file:
+      - .env.dev
     ports:
       - 3000:3000
       - 6060:6060
