@@ -1,13 +1,13 @@
 services:
-client:
+  client:
     build:
       dockerfile: ./Dockerfile
       context: .
     ports:
       - 3000:3000
       - 6060:6060
-    platform-client:
-      build:
-        dockerfile: ./Dockerfile
-        context: .
-      profiles: ["platform"]
+  platform-client:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    profiles: ["platform"]

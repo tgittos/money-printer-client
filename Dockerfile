@@ -28,9 +28,6 @@ RUN npm install
 # copy the app
 COPY --chown=node:node . .
 
-# add bins
-COPY --chown=node:node ./bin/dev /home/node/app/bin
-
 # expose the dev port
 EXPOSE 3000
 # expose styleguidist
@@ -40,4 +37,4 @@ EXPOSE 6060
 USER node
 
 # start app
-ENTRYPOINT /home/node/app/bin/dev
+ENTRYPOINT npm start
