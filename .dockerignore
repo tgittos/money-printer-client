@@ -6,3 +6,4 @@
 logs
 .gitignore
 node_modules
+.next
