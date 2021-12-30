@@ -1,4 +1,4 @@
-import {IProfile} from "../../models/Profile";
+import {IProfile} from "../../schemas/models/Profile";
 import {createContext, Dispatch} from "react";
 
 interface ProfileState {

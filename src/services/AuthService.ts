@@ -1,5 +1,5 @@
 import Cookies from "universal-cookie";
-import Profile, {IProfile} from "../models/Profile";
+import Profile, {IProfile} from "../schemas/models/Profile";
 import HttpService from "./HttpService";
 import jwt from "jwt-decode";
 

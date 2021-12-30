@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../Panel.module.scss";
-import Button from "../../Button/Button";
+import Button from "../../../atoms/Button/Button";
 import {IPanelHeaderProps} from "./PanelHeader";
 
 export interface IPanelFooterProps {

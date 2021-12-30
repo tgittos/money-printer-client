@@ -1,10 +1,10 @@
 import {GetAccounts, RefreshAccountDetails} from "../thunks/AccountThunks";
 import {PayloadAction} from "@reduxjs/toolkit";
-import {IAccount} from "../../models/Account";
+import {IAccount} from "../../schemas/models/Account";
 import {AddAccounts} from "../actions/AccountActions";
 import {GetSymbolHistoricalCloses, GetSymbolHistoricalIntraday, GetSymbolPreviousClose} from "../thunks/StockThunks";
-import {IHistoricalIntradaySymbol} from "../../models/symbols/HistoricalIntradaySymbol";
-import {IHistoricalEoDSymbol} from "../../models/symbols/HistoricalEoDSymbol";
+import {IHistoricalIntradaySymbol} from "../../schemas/models/symbols/HistoricalIntradaySymbol";
+import {IHistoricalEoDSymbol} from "../../schemas/models/symbols/HistoricalEoDSymbol";
 import HttpService from "../../services/HttpService";
 
 export interface IStockIntradays {

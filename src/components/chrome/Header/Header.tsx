@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import {Col, Container, Nav, Navbar, NavDropdown, Row} from "react-bootstrap";
-import Profile, {IProfile} from "../../../models/Profile";
+import Profile, {IProfile} from "../../../schemas/models/Profile";
 import MarketTracker from "./components/MarketTracker";
 import NotificationsBadge from "./components/NotificationsBadge";
 import ProfileBadge from "./components/ProfileBadge";

@@ -1,4 +1,4 @@
-import {IBalance} from "../../models/Balance";
+import {IBalance} from "../../schemas/models/Balance";
 import {PayloadAction} from "@reduxjs/toolkit";
 import {IProfileState} from "./ProfileReducers";
 import {GetBalanceHistoryForAccount} from "../thunks/BalanceThunks";

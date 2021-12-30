@@ -1,8 +1,8 @@
 import moment from "moment";
 import ICandleDataPoint from "../components/shared/Charts/interfaces/ICandleDataPoint";
 import ILineDataPoint from "../components/shared/Charts/interfaces/ILineDataPoint";
-import Account from "../models/Account";
-import Balance, {IBalance} from "../models/Balance";
+import Account from "../schemas/models/Account";
+import Balance, {IBalance} from "../schemas/models/Balance";
 
 export const accounts: Account[] = [
     new Account({

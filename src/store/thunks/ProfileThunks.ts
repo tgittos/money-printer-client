@@ -1,9 +1,9 @@
 import {createAsyncThunk, PayloadAction} from "@reduxjs/toolkit";
-import Profile, {IAuthedProfile, IProfile} from "../../models/Profile";
-import IAuthProfileRequest from "../../requests/AuthProfileRequest";
-import IAuthProfileResponse from "../../responses/AuthProfileResponse";
+import Profile, {IAuthedProfile, IProfile} from "../../schemas/models/Profile";
+import IAuthProfileRequest from "../../schemas/requests/AuthProfileRequest";
+import IAuthProfileResponse from "../../schemas/responses/AuthProfileResponse";
 import HttpService from "../../services/HttpService";
-import IGetUnauthenticatedProfileResponse from "../../responses/GetUnauthenticatedProfileResponse";
+import IGetUnauthenticatedProfileResponse from "../../schemas/responses/GetUnauthenticatedProfileResponse";
 import {wrapThunk} from "../../lib/Utilities";
 
 const http = new HttpService();

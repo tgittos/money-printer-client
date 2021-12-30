@@ -1,9 +1,9 @@
-import ISymbol from "../interfaces/ISymbol";
+import ISymbol from "../schemas/interfaces/ISymbol";
 import ILineDataPoint from "../components/shared/Charts/interfaces/ILineDataPoint";
 import ICandleDataPoint from "../components/shared/Charts/interfaces/ICandleDataPoint";
-import {IHistoricalEoDSymbol} from "../models/symbols/HistoricalEoDSymbol";
-import {IHistoricalIntradaySymbol} from "../models/symbols/HistoricalIntradaySymbol";
-import {IBalance} from "../models/Balance";
+import {IHistoricalEoDSymbol} from "../schemas/models/symbols/HistoricalEoDSymbol";
+import {IHistoricalIntradaySymbol} from "../schemas/models/symbols/HistoricalIntradaySymbol";
+import {IBalance} from "../schemas/models/Balance";
 
 export type SymbolType = IHistoricalEoDSymbol | IHistoricalIntradaySymbol;
 

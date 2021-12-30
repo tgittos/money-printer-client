@@ -1,5 +1,5 @@
-import GetAccountBalancesResponse from "../../responses/GetAccountBalancesResponse";
-import Balance, {IBalance} from "../../models/Balance";
+import GetAccountBalancesResponse from "../../schemas/responses/GetAccountBalancesResponse";
+import Balance, {IBalance} from "../../schemas/models/Balance";
 import HttpService from "../../services/HttpService";
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {wrapThunk} from "../../lib/Utilities";

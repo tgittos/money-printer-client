@@ -1,5 +1,5 @@
-import Balance from "../models/Balance";
-import GetAccountBalancesResponse from "../responses/GetAccountBalancesResponse";
+import Balance from "../schemas/models/Balance";
+import GetAccountBalancesResponse from "../schemas/responses/GetAccountBalancesResponse";
 import HttpService from "./HttpService";
 
 class AccountService {

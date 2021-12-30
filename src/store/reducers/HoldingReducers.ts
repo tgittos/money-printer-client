@@ -1,6 +1,6 @@
 import {GetHoldingsForAccount} from "../thunks/HoldingThunks";
-import {IAccount} from "../../models/Account";
-import {IHolding} from "../../models/Holding";
+import {IAccount} from "../../schemas/models/Account";
+import {IHolding} from "../../schemas/models/Holding";
 import {PayloadAction} from "@reduxjs/toolkit";
 
 export interface IAccountHolding {

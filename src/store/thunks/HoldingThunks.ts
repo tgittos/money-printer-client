@@ -1,6 +1,6 @@
-import Holding, {IHolding} from "../../models/Holding";
+import Holding, {IHolding} from "../../schemas/models/Holding";
 import Env from "../../env";
-import GetAccountHoldingsResponse from "../../responses/GetAccountHoldingsResponse";
+import GetAccountHoldingsResponse from "../../schemas/responses/GetAccountHoldingsResponse";
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {wrapThunk} from "../../lib/Utilities";
 import HttpService from "../../services/HttpService";

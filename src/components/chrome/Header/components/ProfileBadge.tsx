@@ -1,7 +1,7 @@
 import styles from "../Header.module.scss";
 import React from "react";
 import {MdPerson} from "react-icons/all";
-import Profile, {IProfile} from "../../../../models/Profile";
+import Profile, {IProfile} from "../../../../schemas/models/Profile";
 import {Dropdown} from "react-bootstrap";
 
 export interface IProfileBadgeProps {

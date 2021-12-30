@@ -18,15 +18,19 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     // just while im deving, fuuuuuck
     "strictNullChecks": false,
     // disabling cause TS has bugs apparently
     "strictFunctionTypes": false,
-    "strictBindCallApply": false
+    "strictBindCallApply": false,
+    "incremental": true
   },
   "include": [
     "src",
     "styleguide"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

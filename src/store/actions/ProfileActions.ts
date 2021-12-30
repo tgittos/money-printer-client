@@ -1,6 +1,6 @@
 import {createAction} from "@reduxjs/toolkit";
-import Profile, {IProfile} from "../../models/Profile";
-import {profileToIProfile} from "../../models/mappers/ProfileMappers";
+import Profile, {IProfile} from "../../schemas/models/Profile";
+import {profileToIProfile} from "../../schemas/models/mappers/ProfileMappers";
 
 export interface IProfileActionArgs {
     profile: IProfile;

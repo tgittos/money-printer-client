@@ -1,8 +1,8 @@
 import {Action, PayloadAction} from "@reduxjs/toolkit";
-import {IAccount} from "../../models/Account";
+import {IAccount} from "../../schemas/models/Account";
 import {GetAccounts, RefreshAccountDetails} from "../thunks/AccountThunks";
 import {AddAccounts, ClearAccounts} from "../actions/AccountActions";
-import {IHolding} from "../../models/Holding";
+import {IHolding} from "../../schemas/models/Holding";
 import {IProfileState} from "./ProfileReducers";
 
 export interface IAccountHolding {

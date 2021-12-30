@@ -1,7 +1,7 @@
 import {io, Socket} from "socket.io-client";
 import {BehaviorSubject, Observable, ReplaySubject} from "rxjs";
 import Env from "../env";
-import ISymbol from "../interfaces/ISymbol";
+import ISymbol from "../schemas/interfaces/ISymbol";
 
 export type NullableSymbol = ISymbol | null;
 type NullableChannel = IChannel | null;

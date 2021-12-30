@@ -1,5 +1,5 @@
 import React, {useReducer} from "react";
-import ProfileModel, {IProfile} from './../../models/Profile';
+import ProfileModel, {IProfile} from '../../schemas/models/Profile';
 import {Route, Switch} from "react-router-dom";
 import Login from "./components/Login";
 import {ProfileContext, initialProfileState, profileReducer} from './Profile.state';

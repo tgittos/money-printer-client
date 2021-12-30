@@ -1,9 +1,9 @@
 import HttpService from "./HttpService";
 import AuthService from "./AuthService";
-import Profile, {IProfile} from "../models/Profile";
-import IGetUnauthenticatedProfileResponse from "../responses/GetUnauthenticatedProfileResponse";
-import IAuthProfileRequest from "../requests/AuthProfileRequest";
-import IAuthProfileResponse from "../responses/AuthProfileResponse";
+import Profile, {IProfile} from "../schemas/models/Profile";
+import IGetUnauthenticatedProfileResponse from "../schemas/responses/GetUnauthenticatedProfileResponse";
+import IAuthProfileRequest from "../schemas/requests/AuthProfileRequest";
+import IAuthProfileResponse from "../schemas/responses/AuthProfileResponse";
 
 class ProfileService {
 

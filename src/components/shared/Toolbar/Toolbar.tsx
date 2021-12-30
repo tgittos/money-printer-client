@@ -1,6 +1,6 @@
 import styles from "./Toolbar.module.scss";
 import React from "react";
-import IconButton from "../Button/IconButton";
+import IconButton from "../../atoms/Button/IconButton";
 import {Col, Row } from "react-bootstrap";
 
 export interface IToolbarProps {

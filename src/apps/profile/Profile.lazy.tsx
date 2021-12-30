@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import ProfileModel from '../../models/Profile';
+import ProfileModel from '../../schemas/models/Profile';
 
 const LazyProfile = lazy(() => import('./Profile'));
 

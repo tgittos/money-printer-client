@@ -1,5 +1,5 @@
 import styles from "./Icons.module.scss";
-import Account from "../../../models/Account";
+import Account from "../../../schemas/models/Account";
 import React from "react";
 import {Book, Calendar2Month, CashCoin, CashStack, CreditCard2Front, House, PiggyBank} from "react-bootstrap-icons";
 

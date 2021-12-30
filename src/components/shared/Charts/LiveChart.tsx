@@ -7,10 +7,10 @@ import IChartDimensions from "./interfaces/IChartDimensions";
 import {IChartFactory} from "./lib/ChartFactory";
 import moment from 'moment';
 import Env from "../../../env";
-import ISymbol from "../../../interfaces/ISymbol";
-import { SortDescending } from "../../../interfaces/ISymbol";
+import ISymbol from "../../../schemas/interfaces/ISymbol";
+import { SortDescending } from "../../../schemas/interfaces/ISymbol";
 import StockService from "../../../services/StockService";
-import {IHistoricalIntradaySymbol} from "../../../models/symbols/HistoricalIntradaySymbol";
+import {IHistoricalIntradaySymbol} from "../../../schemas/models/symbols/HistoricalIntradaySymbol";
 
 interface ILiveChartProps {
     ticker: string;

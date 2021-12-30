@@ -5,7 +5,7 @@ import {
 import {PayloadAction} from "@reduxjs/toolkit";
 import {ClearAccounts} from "../actions/AccountActions";
 import {GetAccounts} from "../thunks/AccountThunks";
-import {IAuthedProfile, IProfile} from "../../models/Profile";
+import {IAuthedProfile, IProfile} from "../../schemas/models/Profile";
 import {AuthenticateUser, InitializeUnauthenticated} from "../thunks/ProfileThunks";
 import AuthService from "../../services/AuthService";
 

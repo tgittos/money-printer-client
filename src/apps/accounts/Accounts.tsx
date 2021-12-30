@@ -1,4 +1,4 @@
-import {IProfile} from "../../models/Profile";
+import {IProfile} from "../../schemas/models/Profile";
 import {Route, Switch} from "react-router-dom";
 import React from "react";
 

@@ -1,10 +1,10 @@
 import styles from "./../Profile.module.scss";
-import Button from "../../../components/shared/Button/Button";
+import Button from "../../../components/atoms/Button/Button";
 import Panel from "../../../components/shared/Panel/Panel";
 import {profileReducer, ProfileAction, SET_PROFILE, initialProfileState, ProfileContext} from "../Profile.state";
 import {useContext, useEffect, useReducer, useState} from "react";
 import {useRecoilValue, useSetRecoilState} from "recoil";
-import {IProfile} from "../../../models/Profile";
+import {IProfile} from "../../../schemas/models/Profile";
 import ProfileService from "../../../services/ProfileService";
 
 const Login = () => {

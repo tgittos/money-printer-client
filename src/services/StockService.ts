@@ -1,6 +1,6 @@
 import HttpService from "./HttpService";
 import {BehaviorSubject, Observable, Subscription} from "rxjs";
-import RealtimeSymbol from "../models/symbols/RealtimeSymbol";
+import RealtimeSymbol from "../schemas/models/symbols/RealtimeSymbol";
 import Env from "../env";
 import WsService, {IChannel, ISubscriptionRequest, NullableSymbol} from "./WsService";
 

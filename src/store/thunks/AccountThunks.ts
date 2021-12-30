@@ -1,9 +1,9 @@
 import {createAsyncThunk, PayloadAction} from "@reduxjs/toolkit";
-import {IAccount} from "../../models/Account";
+import {IAccount} from "../../schemas/models/Account";
 import {IAccountState} from "../reducers/AccountReducers";
 import HttpService from "../../services/HttpService";
-import IAuthProfileResponse from "../../responses/AuthProfileResponse";
-import IListAccountsResponse from "../../responses/ListAccountsResponse";
+import IAuthProfileResponse from "../../schemas/responses/AuthProfileResponse";
+import IListAccountsResponse from "../../schemas/responses/ListAccountsResponse";
 
 const http = new HttpService();
 

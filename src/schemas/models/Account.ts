@@ -1,4 +1,4 @@
-import {formatAsCurrency} from "../lib/Utilities";
+import {formatAsCurrency} from "../../lib/Utilities";
 
 export interface IAccount {
     id: number;
